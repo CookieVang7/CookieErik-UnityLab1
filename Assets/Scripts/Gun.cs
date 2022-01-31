@@ -26,6 +26,11 @@ public class Gun : MonoBehaviour
         {
             fire();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            LoadingScreen.LoadScene("MainMenu");
+        }
     }
 
     private void fire()
