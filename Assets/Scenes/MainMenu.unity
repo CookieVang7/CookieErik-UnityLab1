@@ -981,6 +981,7 @@ MonoBehaviour:
   openCreditsButton: {fileID: 1191640313}
   closeCreditsButton: {fileID: 522761016}
   platformerButton: {fileID: 349962266}
+  spawnButton: {fileID: 1259410641}
   creditsUI: {fileID: 1516602428}
 --- !u!1 &930451414
 GameObject:
