@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 1505377628}
-  objectPrefab: {fileID: 9210870993632648338, guid: aaeac12e803c99540a0dfcf9b0a008b3, type: 3}
+  objectPrefab: {fileID: 1377115103446257171, guid: 960d8890bc08e234aad9bbc85c633f36, type: 3}
   objectCountText: {fileID: 425700275}
 --- !u!4 &605122214
 Transform:

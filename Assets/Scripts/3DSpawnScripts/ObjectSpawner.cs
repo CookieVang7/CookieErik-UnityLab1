@@ -32,7 +32,7 @@ public class ObjectSpawner : MonoBehaviour
             newObject.transform.rotation = Random.rotation;
 
             objectCount++;
-            objectCountText.SetText("# of Piranhas: " + objectCount);
+            objectCountText.SetText("# of Gelatin: " + objectCount);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
