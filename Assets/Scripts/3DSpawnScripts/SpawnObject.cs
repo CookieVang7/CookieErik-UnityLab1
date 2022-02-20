@@ -17,7 +17,10 @@ public class SpawnObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            LoadingScreen.LoadScene("MainMenu");
+        }
     }
 
     public void SetColor(Color c)
