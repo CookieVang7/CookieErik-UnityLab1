@@ -10,6 +10,8 @@ public class FPSPlayer : MonoBehaviour
     [SerializeField] private AudioSource shootSound;
     [SerializeField] private FPSUI fpsUI;
     [SerializeField] private int maxHealth;
+
+    public static FPSPlayer instance;
     
     private int health;
     private int Health
@@ -53,6 +55,25 @@ public class FPSPlayer : MonoBehaviour
     {
         enemyDefeatCount++;
         fpsUI.ShowEnemyDefeatCount(enemyDefeatCount);
+    }
+
+    public bool ShouldSpawn(Vector3 pos)
+    {
+        Vector3 posDiff = pos - transform.position; 
+
+        Vector3 faceDirection = head.forward;
+
+        float distanceFromPlayer = posDiff.magnitude;
+
+        //return whether or not the enemy spawn is in the player's view and spawns the enemy 10 units away
+        return (Vector3.Dot(posDiff.normalized, faceDirection) < 0.5f) && (distanceFromPlayer > 10f);
+    }
+
+    //Instantiates the player and max health when you start the game
+    private void Awake()
+    {
+        instance = this;
+        Health = maxHealth;
     }
 
     // Update is called once per frame
