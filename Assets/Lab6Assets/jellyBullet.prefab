@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8555801614948921462}
   m_Layer: 0
   m_Name: jellyBullet
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,13 +86,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jelly
       objectReference: {fileID: 0}
+    - target: {fileID: 8973214803558044294, guid: 5fc0b1a20edc1dd4a8bb4a36bdc637fa, type: 3}
+      propertyPath: m_TagString
+      value: bullet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fc0b1a20edc1dd4a8bb4a36bdc637fa, type: 3}
---- !u!1 &126715947711395384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5fc0b1a20edc1dd4a8bb4a36bdc637fa, type: 3}
-  m_PrefabInstance: {fileID: 937670844702509929}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &759419311877434498 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5fc0b1a20edc1dd4a8bb4a36bdc637fa, type: 3}
@@ -103,21 +102,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8973214803558044294, guid: 5fc0b1a20edc1dd4a8bb4a36bdc637fa, type: 3}
   m_PrefabInstance: {fileID: 937670844702509929}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6106032889410174087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 126715947711395384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2232d6fa6dab4c042b28063a55c25dfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainTransform: {fileID: 759419311877434498}
-  moveSpeed: 3
-  moveTime: 3
 --- !u!54 &9079147867748829741
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -148,3 +132,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8009307494050182544, guid: 5fc0b1a20edc1dd4a8bb4a36bdc637fa, type: 3}
+--- !u!114 &1214884795289007292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8179669386288781807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2232d6fa6dab4c042b28063a55c25dfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTransform: {fileID: 759419311877434498}
+  moveSpeed: 7
+  moveTime: 7
