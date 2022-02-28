@@ -19,7 +19,11 @@ public class FPSPlayer : MonoBehaviour
         }
         set { 
             health = value;
-            //fpsUI.ShowHealthFraction((float)Health / (float)maxHealth);
+            fpsUI.ShowHealthFraction((float)Health / (float)maxHealth);
+            if (health<=0)
+            {
+                LoadingScreen.LoadScene("MainMenu");
+            }
         }
     }
 
@@ -42,6 +46,13 @@ public class FPSPlayer : MonoBehaviour
             }
         }
 
+    }
+
+    private int enemyDefeatCount;
+    public void HandleEnemyDefeat()
+    {
+        enemyDefeatCount++;
+        fpsUI.ShowEnemyDefeatCount(enemyDefeatCount);
     }
 
     // Update is called once per frame
