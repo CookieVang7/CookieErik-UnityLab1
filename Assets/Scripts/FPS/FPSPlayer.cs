@@ -24,7 +24,7 @@ public class FPSPlayer : MonoBehaviour
             fpsUI.ShowHealthFraction((float)Health / (float)maxHealth);
             if (health<=0)
             {
-                LoadingScreen.LoadScene("MainMenu");
+                LoadingScreen.LoadScene("YouDied");
             }
         }
     }
